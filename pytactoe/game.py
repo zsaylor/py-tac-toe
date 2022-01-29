@@ -2,6 +2,7 @@ class Game:
     def __init__(self, board, p1, p2):
         self.game_board = board
         self.players = [p1, p2]
+        self.choice_row = 0
 
     def turn(self, player):
         print(f"{player.name}, please enter the coordinates for your next move.")
@@ -54,4 +55,3 @@ class Game:
         if True in check_results:
             return True
         return False
-

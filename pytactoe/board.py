@@ -16,6 +16,8 @@ class Board:
 
     def clear_board(self):
         self.board = [["-"] * 3 for i in range(3)]
+        print(self)
+        return True
 
     def check_full_board(self):
         if any("-" in row for row in self.board):

@@ -3,15 +3,15 @@ from board import Board
 from game import Game
 import itertools
 
-Player = collections.namedtuple('Player', ["name", "symbol", "score"])
+Player = collections.namedtuple('Player', ["name", "symbol"])
 
 
 def main():
     print("Tic Tac Toe!")
     player_one_name = str(input("Player One, enter your name:\n"))
     player_two_name = str(input("Player Two, enter your name:\n"))
-    player_one = Player(player_one_name, "X", 0)
-    player_two = Player(player_two_name, "O", 0)
+    player_one = Player(player_one_name, "X")
+    player_two = Player(player_two_name, "O")
     players = [player_one, player_two]
 
     board = Board()
